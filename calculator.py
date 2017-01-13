@@ -15,8 +15,7 @@ class Calculator:
         self.e.grid(row=0, column=0, columnspan=6, pady=3)
         self.e.focus_set()  # Sets focus on the input text area
 
-        self.expression = None      # will be overwritten below
-        self.expression = None       # will contain expression with replaced operation signs
+        self.expression = None
 
         # Generating Buttons
         Button(master, text="=", width=10, command=lambda: self.calculate()).grid(row=4, column=4, columnspan=2)
